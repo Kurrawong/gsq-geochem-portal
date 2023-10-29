@@ -13,7 +13,9 @@ import Toast from 'primevue/toast'
 import { useToast } from 'primevue/usetoast'
 
 import ValidationResults from '@/components/ValidationResults.vue'
-import qldValidator from '@/assets/qld-validator.ttl?raw'
+import coreValidatorData from '@/assets/validators/core.ttl?raw'
+import gsqValidatorData from '@/assets/validators/gsq.ttl?raw'
+import gsqCompoundedValidatorData from '@/assets/validators/gsq-compounded.ttl?raw'
 import examplesData from '@/examples'
 import type { ValidationReport } from '@/types'
 
@@ -39,9 +41,11 @@ const formatValue = ref(formatValues[0])
 const selectedExample = ref<Example | null>(null)
 const examples = ref(examplesData)
 
-const defaultValidator = { name: 'QLD Validator', value: qldValidator }
-const selectedValidator = ref(defaultValidator)
-const validators = ref([defaultValidator])
+const coreValidator = { name: 'Core Validator', value: coreValidatorData }
+const gsqValidator = { name: 'GSQ Validator', value: gsqValidatorData }
+const gsqCompoundedValidator = { name: 'GSQ Compounded Validator', value: gsqCompoundedValidatorData }
+const selectedValidator = ref(coreValidator)
+const validators = ref([coreValidator, gsqValidator, gsqCompoundedValidator])
 const report = ref<ValidationReport | null>(null)
 const isValidating = ref(false)
 
@@ -230,7 +234,7 @@ const handleTabChange = (event: Event, tabIndex: Number) => {
   <div class="pt-14 pb-8">
     <hr />
     <h2 class="text-2xl">Data Submission</h2>
-    <p>Input data can be submitted to GSQ if validation has no violations.</p>
+    <p><em>Data submission will be implemented at a later date, this is currently just a placeholder.</em></p>
     <div class="pt-8">
       <Button
         disabled
@@ -238,7 +242,6 @@ const handleTabChange = (event: Event, tabIndex: Number) => {
       >
         Submit data
       </Button>
-      <p><em>Data submission will be implemented at a later date.</em></p>
     </div>
   </div>
 </template>

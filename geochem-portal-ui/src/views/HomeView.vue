@@ -29,6 +29,27 @@ const visibleRight = ref(false)
       <article class="lg:col-span-2">
         <section>
           <div class="pt-4 pr-4">
+            <div style="display:grid;">
+              <div style="grid-column:1; padding:5px;">
+                <h3>About</h3>
+                <h4>This System</h4>
+                <p>This is a one-stop-shop for the <a href="https://linked.data.gov.au/def/abis">(proposed) Geochemistry Data Exchange standard</a> built for the <a href="https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq">Geological Survey of Queensland</a>. For more information, contact them!</p>
+                <h4>Geochem Standard</h4>
+                <p>The Standard is a proposed data exchange standard geochemistry results. It aligns with the <a href="#">OneChecemistry</a> initiative and <a href="">AuScope</a>. More info is linked to on the right.</p>
+              </div>
+              <div style="grid-column:2; padding:5px;">
+                <h3>Validation</h3>
+                <p>Validate data according to <em>Profiles</em> of the Standard, using one of the several validators loaded below.</p>
+                <h3>Profiles</h3>
+                <p><em>Profiles</em> are constrained versions of the Standard and there are several See <em>Documentation</em> to the right.</p>
+                <h3>Vocabularies</h3>
+                <p>All vocabularies for use with this Standard are linked to on the right.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="pt-4 pr-4">
             <Validator />
           </div>
         </section>
