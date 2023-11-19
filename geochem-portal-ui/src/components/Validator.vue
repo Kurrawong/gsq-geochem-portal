@@ -128,6 +128,7 @@ const handleTabChange = (event: Event, tabIndex: Number) => {
 <template>
   <Toast />
   <div class="space-y-6">
+    <h1 class="text-4xl pb-4">Validation</h1>
     <p>Validate geochemistry data via text input or file upload.</p>
 
     <Fieldset legend="Input">
