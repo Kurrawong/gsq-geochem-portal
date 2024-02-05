@@ -40,18 +40,18 @@ const props = defineProps<{ large: boolean }>()
         </a>
         <ul class="list-disc pl-[2rem]">
           <li>
-            <a href="http://linked.data.gov.au/def/geochem#_core_profile" target="_blank">Core <i class="pi pi-external-link"></i></a>
+            <a href="http://linked.data.gov.au/def/geochem#_core_profile" target="_blank">Core Profile <i class="pi pi-external-link"></i></a>
             <ul>
-              <li><a href="https://raw.githubusercontent.com/Kurrawong/gsq-geochem/main/profiles/core/validator.ttl" target="_blank">Core Validator<i class="pi pi-external-link"></i></a></li>
-              <li><a href="https://raw.githubusercontent.com/Kurrawong/gsq-geochem/main/profiles/core/validator-combined.ttl" target="_blank">Core Validator - with data expansion<i class="pi pi-external-link"></i></a></li>
+              <li><a href="https://raw.githubusercontent.com/Kurrawong/gsq-geochem/main/profiles/core/validator.ttl" target="_blank">Core Validator <i class="pi pi-external-link"></i></a></li>
+              <li><a href="https://raw.githubusercontent.com/Kurrawong/gsq-geochem/main/profiles/core/validator-combined.ttl" target="_blank">Core Validator - with data expansion <i class="pi pi-external-link"></i></a></li>
             </ul>
           </li>
           <li>
-            <a href="http://linked.data.gov.au/def/geochem#_gsq_profile" target="_blank">GSQ <i class="pi pi-external-link"></i></a>
+            <a href="http://linked.data.gov.au/def/geochem#_gsq_profile" target="_blank">GSQ Profile <i class="pi pi-external-link"></i></a>
             <ul>
               <li><a href="https://github.com/Kurrawong/gsq-geochem/raw/main/profiles/gsq/templates/GeochemXL-v3.0.xlsx" target="_blank">GeochemXL Template v3.0 <i class="pi pi-external-link"></i></a></li>
               <li><a href="https://raw.githubusercontent.com/Kurrawong/gsq-geochem/main/profiles/gsq/validator.ttl" target="_blank">GSQ Validator <i class="pi pi-external-link"></i></a></li>
-              <li><a href="https://raw.githubusercontent.com/Kurrawong/gsq-geochem/main/profiles/gsq/validator-compounded.ttl" target="_blank">GSQ Validator - with data expansion<i class="pi pi-external-link"></i></a></li>
+              <li><a href="https://raw.githubusercontent.com/Kurrawong/gsq-geochem/main/profiles/gsq/validator-compounded.ttl" target="_blank">GSQ Validator - with data expansion <i class="pi pi-external-link"></i></a></li>
             </ul>
           </li>
         </ul>
@@ -78,7 +78,7 @@ const props = defineProps<{ large: boolean }>()
       <article>
         <h3 class="text-base">This System</h3>
         <ul class="list-disc pl-[2rem]">
-          <li><RouterLink to="/vocabs">More about this Portal system</RouterLink></li>
+          <li><RouterLink to="/system">More about this Portal system</RouterLink></li>
         </ul>
       </article>
 
