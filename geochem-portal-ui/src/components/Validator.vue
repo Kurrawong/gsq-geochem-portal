@@ -42,7 +42,7 @@ const examples = ref(examplesData)
 
 const coreValidator = { name: 'Core Validator', value: coreValidatorData }
 const gsqValidator = { name: 'GSQ Validator', value: gsqValidatorData }
-const gsqCompoundedValidator = { name: 'GSQ Compounded Validator', value: gsqCompoundedValidatorData }
+const gsqCompoundedValidator = { name: 'GSQ & Core Compounded Validator', value: gsqCompoundedValidatorData }
 const selectedValidator = ref(coreValidator)
 const validators = ref([coreValidator, gsqValidator, gsqCompoundedValidator])
 const report = ref<ValidationReport | null>(null)
