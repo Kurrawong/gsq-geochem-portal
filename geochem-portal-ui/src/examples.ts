@@ -1,6 +1,6 @@
 const examplesData = [
   {
-    name: 'A demonstration dataset (valid)',
+    name: 'Dataset - valid',
     description: 'Contains an observation, sample, feature of interest and related vocabularies.',
     format: 'text/turtle',
     value: `PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -79,7 +79,7 @@ ex:result-f
 .`
   },
   {
-    name: 'A demonstration dataset (invalid)',
+    name: 'Dataset - invalid',
     description:
       'Missing result and observable property in observation and qualified attribution in the dataset.',
     format: 'text/turtle',

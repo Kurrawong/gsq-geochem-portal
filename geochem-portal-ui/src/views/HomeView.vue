@@ -31,7 +31,7 @@ const visibleRight = ref(false)
           <div class="pt-4 pr-4">
             <div style="display:grid;">
               <div style="grid-column:1; padding:5px;">
-                <h3>This System</h3>
+                <h3>This Portal</h3>
                 <p>This is a one-stop-shop for the <a href="https://linked.data.gov.au/def/abis">(proposed) Geochemistry Data Exchange standard</a> built for the <a href="https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq">Geological Survey of Queensland</a>. For more information, contact them!</p>
                 <h3>Geochem Standard</h3>
                 <p>The Standard is a proposed data exchange standard geochemistry results. It aligns with the <a href="#">OneGeochemistry</a> initiative and <a href="">AuScope</a>. More info is linked to on the right.</p>

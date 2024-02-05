@@ -31,9 +31,8 @@ const textareaValue = ref('')
 const fileInput: Ref<HTMLInputElement | null> = ref(null)
 const fileSelected = ref(false)
 const formatValues = [
-  { name: 'JSON', value: 'application/json' },
-  { name: 'JSON-LD', value: 'application/ld+json' },
   { name: 'RDF Turtle', value: 'text/turtle' },
+  { name: 'JSON-LD', value: 'application/ld+json' },
   { name: 'Excel', value: 'application/vnd.ms-excel' }
 ]
 const formatValue = ref(formatValues[0])
