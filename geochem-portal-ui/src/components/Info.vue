@@ -43,7 +43,7 @@ const props = defineProps<{ large: boolean }>()
             <a href="http://linked.data.gov.au/def/geochem#_core_profile" target="_blank">Core Profile <i class="pi pi-external-link"></i></a>
             <ul>
               <li><a href="https://raw.githubusercontent.com/Kurrawong/gsq-geochem/main/profiles/core/validator.ttl" target="_blank">Core Validator <i class="pi pi-external-link"></i></a></li>
-              <li><a href="https://raw.githubusercontent.com/Kurrawong/gsq-geochem/main/profiles/core/validator-combined.ttl" target="_blank">Core Validator - with data expansion <i class="pi pi-external-link"></i></a></li>
+              <li><a href="https://raw.githubusercontent.com/Kurrawong/gsq-geochem/main/profiles/core/expander.ttl" target="_blank">Core Validator data expansion <i class="pi pi-external-link"></i></a></li>
             </ul>
           </li>
           <li>
@@ -51,7 +51,7 @@ const props = defineProps<{ large: boolean }>()
             <ul>
               <li><a href="https://github.com/Kurrawong/gsq-geochem/raw/main/profiles/gsq/templates/GeochemXL-v3.0.xlsx" target="_blank">GeochemXL Template v3.0 <i class="pi pi-external-link"></i></a></li>
               <li><a href="https://raw.githubusercontent.com/Kurrawong/gsq-geochem/main/profiles/gsq/validator.ttl" target="_blank">GSQ Validator <i class="pi pi-external-link"></i></a></li>
-              <li><a href="https://raw.githubusercontent.com/Kurrawong/gsq-geochem/main/profiles/gsq/validator-compounded.ttl" target="_blank">GSQ Validator - with data expansion <i class="pi pi-external-link"></i></a></li>
+              <li><a href="https://raw.githubusercontent.com/Kurrawong/gsq-geochem/main/profiles/gsq/validator-compounded.ttl" target="_blank">GSQ & Core Validators compounded <i class="pi pi-external-link"></i></a></li>
             </ul>
           </li>
         </ul>
