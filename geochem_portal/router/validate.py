@@ -1,5 +1,5 @@
-import time
 import asyncio
+import time
 from enum import Enum
 
 import httpx
@@ -8,12 +8,14 @@ from pydantic import BaseModel
 from rdflib import Graph
 
 from geochem_portal.fetch import fetch
-from geochem_portal.validate import validate, ParseError
 from geochem_portal.queries import get_oc_to_o_query
 from geochem_portal.settings import settings
+from geochem_portal.validate import ParseError, validate
+from geochem_portal.validate_json import (
+    ValidationError as JSONSchemaValidationError,
+)
 from geochem_portal.validate_json import (
     json_to_rdf,
-    ValidationError as JSONSchemaValidationError,
 )
 
 router = APIRouter()

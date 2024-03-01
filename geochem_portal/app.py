@@ -9,6 +9,7 @@ from geochem_portal import router
 def register_routers(app: FastAPI) -> None:
     app.include_router(router.system.router, prefix="/api/v1/system", tags=["System"])
     app.include_router(router.validate.router, prefix="/api/v1", tags=["Validation"])
+    app.include_router(router.convert.router, prefix="/api/v1", tags=["Conversion"])
     app.include_router(router.ui.router)
 
 

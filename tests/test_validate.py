@@ -1,7 +1,7 @@
 import pytest
 
-from geochem_portal.validate import validate, ValidationReport, ValidationResult
-
+from geochem_portal.models import ValidationReport, ValidationResult
+from geochem_portal.validate import validate
 
 shacl_shape = """
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
