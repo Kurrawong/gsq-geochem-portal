@@ -5,6 +5,7 @@ import Sidebar from 'primevue/sidebar'
 
 import Validator from '@/components/Validator.vue'
 import Info from '@/components/Info.vue'
+import Converter from "@/components/Converter.vue";
 
 const visibleRight = ref(false)
 </script>
@@ -48,6 +49,9 @@ const visibleRight = ref(false)
           </div>
         </section>
         <section>
+          <div class="pt-4 pr-4">
+            <Converter />
+          </div>
           <div class="pt-4 pr-4">
             <Validator />
           </div>

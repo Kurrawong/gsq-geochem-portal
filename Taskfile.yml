@@ -3,6 +3,18 @@
 version: "3"
 
 tasks:
+  code:check:
+    desc: Check whether code formatting rules apply.
+    cmds:
+      - poetry run ruff format --check
+      - poetry run ruff check
+
+  code:
+    desc: Format and standardise code.
+    cmds:
+      - poetry run ruff format
+      - poetry run ruff check --fix
+
   dev:
     cmds:
       - poetry run python main.py

@@ -147,7 +147,7 @@ const handleTabChange = (event: Event, tabIndex: Number) => {
                 <div v-if="slotProps.value">
                   <div>{{ slotProps.value.name }}</div>
                 </div>
-                <div v-else="">
+                <div v-else>
                   {{ slotProps.placeholder }}
                 </div>
               </template>
@@ -227,21 +227,7 @@ const handleTabChange = (event: Event, tabIndex: Number) => {
 
     <div v-if="report" class="pt-8">
       <hr />
-      <ValidationResults v-if="report" :report="report" />
-    </div>
-  </div>
-
-  <div class="pt-14 pb-8">
-    <hr />
-    <h2 class="text-2xl">Data Submission</h2>
-    <p><em>Data submission will be implemented at a later date, this is currently just a placeholder.</em></p>
-    <div class="pt-8">
-      <Button
-        disabled
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-      >
-        Submit data
-      </Button>
+      <ValidationResults v-if="report" title="Validation Results" :report="report" />
     </div>
   </div>
 </template>
